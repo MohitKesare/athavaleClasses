@@ -19,6 +19,7 @@
   line-height: 20px;
   padding: 10px;
   color: rgba(70, 70, 70, 1);
+  border: 1px solid #efefef;
 
   /* background-color: rgba(0, 123, 176, 1); */
 }
