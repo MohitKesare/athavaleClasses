@@ -1,0 +1,57 @@
+.toppers {
+  height: fit-content;
+  width: 80%;
+  /* border: 2px solid red; */
+  margin: 5vh auto;
+}
+.sp-topper {
+  width: 100%;
+  display: flex;
+  background-color: rgba(0, 123, 176, 1);
+  color: white !important;
+}
+.topper-row {
+  width: 100%;
+  display: flex;
+  font-family: "Satoshi-Variable";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px;
+  color: rgba(70, 70, 70, 1);
+
+  /* background-color: rgba(0, 123, 176, 1); */
+}
+.topper-sr-no {
+  width: 20%;
+  /* background-color: skyblue; */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.topper-name {
+  width: 50%;
+  /* background-color: green; */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.topper-marks {
+  width: 30%;
+  /* background-color: red; */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 400px) {
+  .toppers {
+    width: 95%;
+  }
+  .topper-row {
+    font-size: 13px;
+  }
+}
+

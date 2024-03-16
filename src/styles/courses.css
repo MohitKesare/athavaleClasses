@@ -1,0 +1,205 @@
+.courses {
+  width: 90vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  /* border: 2px solid black; */
+  /* align-items: center;
+  justify-content: center; */
+  /* justify-content: space-between; */
+}
+.course-card {
+  width: 20vw;
+  height: fit-content;
+  /* background-color: skyblue; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  margin: 0 1vw 0 1vw;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* border: 4px solid green; */
+}
+.course-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+  /* border: 2px solid blue; */
+}
+.course-card-image {
+  height: 45%;
+  width: 100%;
+  /* border: 1px solid red; */
+}
+.course-card-content {
+  width: 100%;
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+}
+.course-card-image img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+}
+.card-name {
+  width: 90%;
+  height: fit-content;
+
+  /* border: 1px solid blue; */
+  margin: 1vh auto;
+}
+.card-name h3 {
+  font-family: "Satoshi-Variable";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32.4px;
+  color: rgba(52, 52, 52, 1);
+}
+.card-desc {
+  width: 90%;
+  margin: auto;
+}
+.card-desc p {
+  font-family: "Satoshi-Variable";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: rgba(70, 70, 70, 1);
+}
+.card-button {
+  width: 80%;
+  margin: auto;
+  height: 5vh;
+  border-radius: 10px;
+  padding: 9px, 6px, 9px, 6px;
+  gap: 6px;
+  background-color: rgba(0, 121, 173, 1);
+  margin-bottom: 1vh;
+  font-family: "Satoshi-Variable";
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  border: none;
+}
+@media screen and (max-width: 1150px) {
+  .card-name h3 {
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .card-desc p {
+    font-size: 13px;
+    line-height: 16px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .course-card {
+    width: 28vw;
+  }
+  .course-content {
+    /* border: 1px solid red; */
+    margin: 1vh auto;
+  }
+  .card-button {
+    height: 5vh;
+  }
+}
+@media screen and (max-width: 750px) {
+  .card-name h3 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .card-desc p {
+    font-size: 12px;
+    line-height: 14px;
+    margin: 0 0 0 0;
+  }
+  .card-button {
+    height: 5vh;
+    font-size: 15px;
+    margin-top: 1vh;
+  }
+}
+@media screen and (max-width: 700px) {
+  .course-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .course-card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid green; */
+    margin: 1vh auto 1vh auto;
+  }
+  .course-card-image {
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid red; */
+  }
+  .card-name {
+    margin: 0.2vh auto 0 auto;
+  }
+  .card-desc {
+    margin: 0.3vh auto 0.3vh auto;
+  }
+  .card-button {
+    margin-bottom: 1vh;
+  }
+}
+@media screen and (max-width: 525px) {
+  .card-name h3 {
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .card-desc p {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .card-button {
+    height: 4vh;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .card-name h3 {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .card-desc p {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .card-button {
+    height: 4vh;
+    width: 70%;
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .course-card {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+  }
+  .card-name h3 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .card-desc p {
+    font-size: 12px;
+    line-height: 14px;
+    margin: 0 0 0 0;
+  }
+  .card-button {
+    height: 5vh;
+    font-size: 15px;
+    margin-top: 1vh;
+  }
+}

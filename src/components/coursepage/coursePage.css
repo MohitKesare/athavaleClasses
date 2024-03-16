@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+.course-page {
+  height: fit-content;
+  width: 80vw;
+  margin: auto;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+}
+.course-page-content {
+  height: 80%;
+  width: 100%;
+  /* border: 1px solid green; */
+  display: flex;
+  flex-direction: column;
+}
+.course-tabs {
+  height: 10%;
+  width: 100%;
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px solid gray;
+}
+.tab-item {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(101, 119, 129, 1);
+  padding: 0.5rem 0.5rem;
+  cursor: pointer;
+}
+.active {
+  color: rgba(21, 125, 183, 1);
+  border-bottom: 3px solid rgba(21, 125, 183, 1);
+}
+.tab-content {
+  width: 90%;
+  /* background-color: skyblue; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: 100%;
+  margin: 2vh auto;
+}
+.course-page-head {
+  width: 100%;
+  height: fit-content;
+  /* background-color: red; */
+  margin: 8vh auto;
+  text-align: center;
+  font-family: "Satoshi-Variable";
+}
+.course-page-head h3 {
+  /* font-family: "Satoshi-Variable"; */
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 21px;
+  color: rgba(70, 70, 70, 1);
+}
+.course-cards {
+  display: flex;
+  justify-content: center;
+  /* background-color: rgb(114, 114, 224); */
+  margin-top: 5vh;
+}
+.course-page-card {
+  width: 45%;
+  height: fit-content;
+  /* border: 1px solid black; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  flex-direction: column;
+  margin: 3vh 1vw 3vh 1vw;
+  border-radius: 10px;
+}
+.course-card-head {
+  width: 100%;
+  font-family: "Satoshi-Variable";
+  font-weight: 500;
+  font-style: 20px;
+  line-height: 21px;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+  background-color: rgba(0, 123, 176, 1);
+  padding: 10px;
+  color: white;
+}
+.course-card-date {
+  width: 80%;
+  margin: 2vh auto 1vh auto;
+  /* border: 1px solid red; */
+  font-family: "Satoshi-Variable";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  /* text-align: center; */
+}
+.course-card-date p {
+  margin-top: 0.4rem;
+  color: rgba(70, 70, 70, 1);
+}
+.course-card-table {
+  width: 80%;
+  margin: 2vh auto;
+
+  border-color: rgba(204, 204, 204, 1);
+  display: flex;
+  /* background-color: blue; */
+  flex-direction: column;
+}
+.table-row {
+  width: 100%;
+  display: flex;
+  font-family: "Satoshi-Variable";
+  font-weight: 700;
+  text-align: center;
+  font-size: 13px;
+
+  /* padding: 10px; */
+  border-bottom: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+}
+.table-row-key {
+  width: 20%;
+  /* background-color: red; */
+  padding: 10px;
+  border-right: 1px solid gray;
+}
+.table-row-value {
+  width: 80%;
+  /* background-color: blue; */
+  padding: 10px;
+}
+.special-row {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 123, 176, 1);
+}
+.course-info {
+  width: 90%;
+  margin: 4vh auto;
+  display: flex;
+  flex-direction: column;
+  font-family: "Satoshi-Variable";
+  color: rgba(70, 70, 70, 1);
+}
+.course-fees-info h3 {
+  font-size: 24px;
+  font-style: 700;
+  line-height: 32px;
+  margin-bottom: 1vh;
+}
+.course-req h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+.course-fees-info ul li {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+  margin-left: 1vw;
+}
+.course-req ul li {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+  margin-left: 1vw;
+}
+.course-req {
+  margin: 3vh 0;
+}
+.table-note {
+  width: 100%;
+  /* background-color: black; */
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Satoshi-Variable";
+  font-weight: 700;
+  text-align: center;
+  font-size: 13px;
+}
+.sp-border {
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
+  border-left: 1px solid gray;
+}
+.table-note img {
+  margin: 0 0.4rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .course-page {
+    width: 90vw;
+  }
+  .tab-content {
+    width: 100%;
+  }
+  .table-note {
+    height: 7.5vh;
+  }
+}
+@media screen and (max-width: 750px) {
+  .course-page {
+    width: 100vw;
+  }
+  .tab-content {
+    width: 100%;
+  }
+  .tab-item {
+    font-size: 13px;
+  }
+  .course-page-head h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .tab-item {
+    font-size: 10px;
+  }
+  .course-cards {
+    flex-direction: column;
+  }
+  .tab-content {
+    width: 80%;
+  }
+  .course-page-card {
+    width: 80%;
+    margin: 2vh auto;
+  }
+}
+@media screen and (max-width: 450px) {
+  .table-note {
+    height: 10vh;
+  }
+  .course-page-card {
+    width: 90%;
+  }
+  .tab-content {
+    width: 90%;
+  }
+  .table-row {
+    font-size: 10px;
+  }
+  .course-card-date {
+    font-size: 12px;
+  }
+  .course-fees-info h3 {
+    font-size: 16px;
+  }
+  .course-fees-info ul li {
+    font-size: 12px;
+    margin-left: 1rem;
+  }
+  .course-req h3 {
+    font-size: 16px;
+  }
+  .course-req ul li {
+    font-size: 12px;
+    margin-left: 1rem;
+  }
+  .course-card-table {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 300px) {
+  .table-row-key {
+    font-size: 8px;
+  }
+}
+
+.sp-table {
+  width: 100%;
+  height: fit-content;
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
